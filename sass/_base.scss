@@ -9,6 +9,11 @@ $bp-smallest: 31.25em;
 $default-font-size: 1.6rem;
 
 
+//COLOR VARIABLES 
+$color-primary: #5e3db3;
+$color-secondary: #0a0d35;
+
+
 
 /* BASE SETTINGS */
 *,
@@ -31,6 +36,7 @@ html {
 body {
   font-family: "Metropolis", sans-serif;
   font-weight: normal;
+  line-height: 1.6;
 }
 
 h1 {
@@ -38,8 +44,9 @@ h1 {
 }
 
 .container {
-  max-width: 111rem;
+  max-width: 153rem;
   margin: 0rem auto;
+  height: 100%;
 
 
   @media only screen and (max-width: $bp-largest) {

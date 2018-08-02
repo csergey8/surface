@@ -16,14 +16,16 @@ html {
 
 body {
   font-family: "Metropolis", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.6; }
 
 h1 {
   font-family: "Metropolis", sans-serif; }
 
 .container {
-  max-width: 111rem;
-  margin: 0rem auto; }
+  max-width: 153rem;
+  margin: 0rem auto;
+  height: 100%; }
   @media only screen and (max-width: 75em) {
     .container {
       margin: 0;
@@ -49,3 +51,90 @@ h1 {
   font-family: Metropolis;
   font-weight: 300;
   src: url("../fonts/Metropolis-Light.otf") format("opentype"); }
+
+.header {
+  height: 96rem;
+  background: url("../img/main.png") no-repeat center;
+  color: #fff;
+  position: relative; }
+  .header__overlay {
+    background: rgba(10, 13, 53, 0.8);
+    width: 100%;
+    height: 100%; }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5.3rem; }
+    .header__top--tagline {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 1.4rem; }
+  .header__title {
+    position: absolute;
+    top: 49%;
+    transform: translateY(-50%);
+    font-size: 9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 153rem;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column; }
+    .header__title--phrase-one {
+      z-index: 1; }
+    .header__title--phrase-two {
+      text-align: right; }
+    .header__title--sportlist {
+      font-size: 1.4rem;
+      font-weight: 100;
+      list-style: none;
+      color: #5e3db3;
+      text-align: right;
+      display: flex;
+      margin-left: auto;
+      width: 57rem;
+      justify-content: space-between; }
+    .header__title--line {
+      width: 38.5rem;
+      height: 0.5rem;
+      background: #5e3db3;
+      position: relative;
+      transform: rotate(-52deg) translateX(42%);
+      left: 15%; }
+  .header__buttons {
+    bottom: 15%;
+    position: absolute;
+    width: 153rem;
+    display: flex;
+    justify-content: center; }
+    .header__buttons--item {
+      width: 31.1rem;
+      background: #5e3db3;
+      border: none;
+      height: 7.7rem;
+      border-radius: 4rem;
+      box-shadow: 0px 16px 24px 0px #0a0d35;
+      color: #fff;
+      display: flex;
+      outline: 0px; }
+      .header__buttons--item i {
+        font-size: 4rem;
+        margin-left: 13%;
+        margin-right: 10%; }
+      .header__buttons--item:nth-child(1) {
+        margin-right: 5rem; }
+    .header__buttons--text {
+      width: 16rem;
+      font-size: 1.4rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      text-align: left;
+      font-family: "Metropolis", sans-serif;
+      position: relative;
+      top: .5rem;
+      letter-spacing: 1px; }
+      .header__buttons--text:nth-child(1) {
+        width: 12rem;
+        color: red; }
+      .header__buttons--text span {
+        font-weight: bold; }
