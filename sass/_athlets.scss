@@ -1,0 +1,121 @@
+.section {
+  &__athlets {
+    max-height: 96rem;
+    display: flex;
+    flex-direction: column;
+
+    &--img {
+      position: absolute;
+      left: 10rem;
+      z-index: 2;
+    }
+
+
+    &--blank {
+      position: relative;
+      width: 40%;
+    }
+
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    & .cross-1-1 {
+      top: 15.8rem;
+      left: 21rem;
+    }
+
+    & .cross-1-2 {
+      top: 15.8rem;
+      left: 21rem;
+      transform: rotate(90deg);
+    }
+
+    & .cross-2-1 {
+      left: 23rem;
+      top: 16.9rem;
+    }
+
+    & .cross-2-2 {
+      left: 23rem;
+      top: 17rem;
+      transform: rotate(90deg);
+    }
+
+    &--title {
+      width: 45%;
+      color: $color-grey;
+
+      font-size: 9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 10.3rem;
+      line-height: 1;
+      height: 25.7rem;
+    }
+
+    &--line {
+      width: 100rem;
+      background: #916fe9;
+      height: .5rem;
+      z-index: 0;
+      transform: rotate(-54deg) translateX(40rem);
+      left: -33rem;
+      position: relative;
+    }
+
+
+    &--item {
+      height: 25.7rem;
+      
+
+
+
+      &:nth-child(3) {
+        background: $color-third;
+      }
+
+      &:nth-child(4) {
+        background: $color-primary;
+      }
+    }
+
+    &--textbox {
+      width: 45%;
+      align-self: center;
+
+      &--title {
+        color: $color-grey-dark;
+        text-transform: uppercase;
+        font-size: 3.6rem;
+
+       
+
+        & span {
+          font-size: 1.8rem;
+          border-bottom: 5px solid $color-primary;
+          color: black;
+          position: relative;
+          top: -12px;
+          
+        }
+
+
+        
+      }
+
+      &--text {
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.grey-border {
+           
+  border-bottom: 5px solid $color-third !important;
+
+}

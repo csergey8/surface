@@ -12,6 +12,9 @@ $default-font-size: 1.6rem;
 //COLOR VARIABLES 
 $color-primary: #5e3db3;
 $color-secondary: #0a0d35;
+$color-third: #f6f4fb;
+$color-grey: #e7e7e7;
+$color-grey-dark: #c1c1c1;
 
 
 
@@ -54,4 +57,23 @@ h1 {
       max-width: 100%;
       width: 100%;
   }
+}
+
+/* CROSS */
+
+.cross {
+  width: 1.5rem;
+  height: 1px;
+  background: $color-primary;
+  box-shadow: 0px 0px 0px 1px rgba($color-primary,.5);
+  position: absolute;
+}
+
+.cross-light {
+  width: 1.5rem;
+  height: 1px;
+  background: $color-primary;
+  box-shadow: 0px 0px 0px 1px rgba($color-primary,.5);
+  opacity: .5;
+  position: absolute;
 }
