@@ -157,8 +157,9 @@ h1 {
   flex-direction: column; }
   .section__athlets--img {
     position: absolute;
-    left: 10rem;
-    z-index: 2; }
+    left: 6rem;
+    z-index: 2;
+    height: 110rem; }
   .section__athlets--blank {
     position: relative;
     width: 40%; }
@@ -202,7 +203,8 @@ h1 {
     .section__athlets--item:nth-child(3) {
       background: #f6f4fb; }
     .section__athlets--item:nth-child(4) {
-      background: #5e3db3; }
+      background: #5e3db3;
+      color: #fff; }
   .section__athlets--textbox {
     width: 45%;
     align-self: center; }
@@ -222,3 +224,93 @@ h1 {
 
 .grey-border {
   border-bottom: 5px solid #f6f4fb !important; }
+
+.section__players {
+  margin-top: 6.8rem;
+  max-height: 96rem;
+  display: flex;
+  flex-direction: column; }
+  .section__players--img {
+    position: absolute;
+    z-index: 2;
+    right: -12rem;
+    top: -3rem;
+    height: 86rem; }
+  .section__players--blank {
+    position: relative;
+    width: 40%; }
+  .section__players--container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%; }
+  .section__players .cross-3-1 {
+    top: 13rem;
+    left: 2rem; }
+  .section__players .cross-3-2 {
+    top: 13rem;
+    left: 2rem;
+    transform: rotate(90deg); }
+  .section__players .cross-4-1 {
+    left: -1rem;
+    top: 11rem; }
+  .section__players .cross-4-2 {
+    left: -1rem;
+    top: 11rem;
+    transform: rotate(90deg); }
+  .section__players .cross-5-1 {
+    right: 8rem;
+    top: 40rem; }
+  .section__players .cross-5-2 {
+    right: 8rem;
+    top: 40rem;
+    transform: rotate(90deg); }
+  .section__players--title {
+    width: 45%;
+    color: #e7e7e7;
+    font-size: 9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10.3rem;
+    line-height: 1;
+    height: 25.7rem; }
+  .section__players--line {
+    width: 63rem;
+    background: #916fe9;
+    height: .5rem;
+    z-index: 0;
+    transform: rotate(-54deg) translateX(27rem);
+    left: -39rem;
+    position: relative; }
+  .section__players--line-two {
+    width: 38rem;
+    background: #916fe9;
+    height: .5rem;
+    z-index: 0;
+    transform: rotate(-54deg) translateX(68rem);
+    left: -8rem;
+    position: relative; }
+  .section__players--item {
+    height: 25.7rem; }
+    .section__players--item:nth-child(3) {
+      background: #f6f4fb; }
+    .section__players--item:nth-child(4) {
+      background: #0a0d35;
+      color: #fff; }
+      .section__players--item:nth-child(4) span {
+        color: #5e3db3; }
+  .section__players--textbox {
+    width: 45%;
+    align-self: center; }
+    .section__players--textbox--title {
+      color: #c1c1c1;
+      text-transform: uppercase;
+      font-size: 3.6rem; }
+      .section__players--textbox--title span {
+        font-size: 1.8rem;
+        border-bottom: 5px solid #5e3db3;
+        color: black;
+        position: relative;
+        top: -12px; }
+    .section__players--textbox--text {
+      font-size: 2rem;
+      font-weight: 300; }

@@ -1,14 +1,16 @@
 .section {
-  &__athlets {
+  &__players {
+    margin-top: 6.8rem;
     max-height: 96rem;
     display: flex;
     flex-direction: column;
 
     &--img {
       position: absolute;
-      left: 6rem;
       z-index: 2;
-      height: 110rem;
+      right: -12rem;
+      top: -3rem;
+      height: 86rem;
     }
 
 
@@ -23,25 +25,36 @@
       height: 100%;
     }
 
-    & .cross-1-1 {
-      top: 15.8rem;
-      left: 21rem;
+    & .cross-3-1 {
+      top: 13rem;
+      left: 2rem;
     }
 
-    & .cross-1-2 {
-      top: 15.8rem;
-      left: 21rem;
+    & .cross-3-2 {
+      top: 13rem;
+      left: 2rem;
       transform: rotate(90deg);
     }
 
-    & .cross-2-1 {
-      left: 23rem;
-      top: 16.9rem;
+    & .cross-4-1 {
+      left: -1rem;
+      top: 11rem;
     }
 
-    & .cross-2-2 {
-      left: 23rem;
-      top: 17rem;
+    & .cross-4-2 {
+      left: -1rem;
+      top: 11rem;
+      transform: rotate(90deg);
+    }
+
+    & .cross-5-1 {
+      right: 8rem;
+      top: 40rem;
+    }
+
+    & .cross-5-2 {
+      right: 8rem;
+      top: 40rem;
       transform: rotate(90deg);
     }
 
@@ -58,12 +71,22 @@
     }
 
     &--line {
-      width: 100rem;
+      width: 63rem;
       background: #916fe9;
       height: .5rem;
       z-index: 0;
-      transform: rotate(-54deg) translateX(40rem);
-      left: -33rem;
+      transform: rotate(-54deg) translateX(27rem);
+      left: -39rem;
+      position: relative;
+    }
+
+    &--line-two {
+      width: 38rem;
+      background: #916fe9;
+      height: .5rem;
+      z-index: 0;
+      transform: rotate(-54deg) translateX(68rem);
+      left: -8rem;
       position: relative;
     }
 
@@ -79,8 +102,12 @@
       }
 
       &:nth-child(4) {
-        background: $color-primary;
+        background: #0a0d35;
         color: #fff;
+
+        & span {
+          color: $color-primary;
+        }
       }
     }
 
@@ -114,10 +141,4 @@
       }
     }
   }
-}
-
-.grey-border {
-           
-  border-bottom: 5px solid $color-third !important;
-
 }
