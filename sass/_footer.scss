@@ -1,0 +1,91 @@
+footer {
+  height: 96rem;
+  background: url('../img/footer__bg.png') center no-repeat;
+}
+
+.footer {
+
+  &__buttons {
+    padding-top: 10rem !important;
+  }
+  &__application {
+    background: rgba($color-secondary, 0.8);
+    width: 100%;
+    height: 79rem;
+
+     &--textbox {
+       padding-top: 23rem;
+       display: flex;
+       justify-content: center;
+     }
+
+     &--app-logo {
+      width: 13rem;
+      height: 13.7rem;
+      margin-right: 3.6rem;
+     }
+
+     &--title {
+      font-size: 9rem;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.2;
+      z-index: 3;
+      position: relative;
+     }
+
+     &--text {
+      text-transform: uppercase;
+      color: #a595cc;
+      font-size: 3.6rem;
+      text-align: left;
+      position: relative;
+      top: -2rem;
+      z-index: 3;
+     }
+
+     &--line-one {
+      width: 16rem;
+      height: .5rem;
+      background: $color-primary;
+      transform: rotate(-54deg) translateX(12rem);
+      left: -6rem;
+      position: relative;
+      z-index: 2;
+     }
+
+     &--line-two {
+      width: 29rem;
+      height: .5rem;
+      background: $color-primary;
+      transform: rotate(-54deg) translateX(12rem);
+      left: 30rem;
+      position: relative;
+      z-index: 2;
+     }
+  }
+  &__bottom {
+    height: 17rem;
+    background: rgba($color-secondary, 0.9);
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding: 0 5rem;
+
+    &--social {
+      margin-left: 11rem;
+      & i {
+        padding: 0 1.5rem;
+      }
+    }
+
+    & > * {
+      align-self: center;
+      font-size: 2rem;
+      font-weight: lighter;
+    }
+  }
+}
+
+
+  

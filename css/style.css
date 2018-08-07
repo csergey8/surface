@@ -231,11 +231,12 @@ h1 {
   display: flex;
   flex-direction: column; }
   .section__players--img {
-    position: absolute;
     z-index: 2;
     right: -12rem;
     top: -3rem;
-    height: 86rem; }
+    height: 86rem;
+    overflow: hidden;
+    max-width: 100%; }
   .section__players--blank {
     position: relative;
     width: 40%; }
@@ -372,3 +373,70 @@ h1 {
 .card__img {
   width: 100%;
   height: 100%; }
+
+footer {
+  height: 96rem;
+  background: url("../img/footer__bg.png") center no-repeat; }
+
+.footer__buttons {
+  padding-top: 10rem !important; }
+
+.footer__application {
+  background: rgba(10, 13, 53, 0.8);
+  width: 100%;
+  height: 79rem; }
+  .footer__application--textbox {
+    padding-top: 23rem;
+    display: flex;
+    justify-content: center; }
+  .footer__application--app-logo {
+    width: 13rem;
+    height: 13.7rem;
+    margin-right: 3.6rem; }
+  .footer__application--title {
+    font-size: 9rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    z-index: 3;
+    position: relative; }
+  .footer__application--text {
+    text-transform: uppercase;
+    color: #a595cc;
+    font-size: 3.6rem;
+    text-align: left;
+    position: relative;
+    top: -2rem;
+    z-index: 3; }
+  .footer__application--line-one {
+    width: 16rem;
+    height: .5rem;
+    background: #5e3db3;
+    transform: rotate(-54deg) translateX(12rem);
+    left: -6rem;
+    position: relative;
+    z-index: 2; }
+  .footer__application--line-two {
+    width: 29rem;
+    height: .5rem;
+    background: #5e3db3;
+    transform: rotate(-54deg) translateX(12rem);
+    left: 30rem;
+    position: relative;
+    z-index: 2; }
+
+.footer__bottom {
+  height: 17rem;
+  background: rgba(10, 13, 53, 0.9);
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  padding: 0 5rem; }
+  .footer__bottom--social {
+    margin-left: 11rem; }
+    .footer__bottom--social i {
+      padding: 0 1.5rem; }
+  .footer__bottom > * {
+    align-self: center;
+    font-size: 2rem;
+    font-weight: lighter; }
