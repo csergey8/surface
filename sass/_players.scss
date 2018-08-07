@@ -11,7 +11,7 @@
       top: -3rem;
       height: 86rem;
       overflow: hidden;
-      max-width: 100%;
+      max-width: 100rem;
     }
 
 
@@ -79,6 +79,7 @@
       transform: rotate(-54deg) translateX(27rem);
       left: -39rem;
       position: relative;
+      overflow: hidden;
     }
 
     &--line-two {
@@ -89,7 +90,14 @@
       transform: rotate(-54deg) translateX(68rem);
       left: -8rem;
       position: relative;
-    }
+      overflow: hidden;
+
+      @media only screen and (max-width: 1568px) {
+        width: 30rem;
+      }
+        
+      }
+    
 
 
     &--item {

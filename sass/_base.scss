@@ -53,9 +53,10 @@ h1 {
 
 
   @media only screen and (max-width: $bp-largest) {
-      margin: 0;
+      margin: 0 auto;
       max-width: 100%;
-      width: 100%;
+      width: 95%;
+
   }
 }
 

@@ -4,6 +4,10 @@
   color: #fff;
   position: relative;
 
+  @media only screen and (max-width: 768px) {
+    background: url('../img/main.png') no-repeat center top;
+  }
+
   &__overlay {
     background: rgba($color-secondary, .8);
     width: 100%;
@@ -27,10 +31,17 @@
     font-size: 9rem;
     font-weight: bold;
     text-transform: uppercase;
-    width: 153rem;
+    max-width: 153rem;
     line-height: 1.1;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 6.4rem;
+      width: 60rem;
+      margin: 0 auto;
+      margin-top: 25%;
+    }
 
     &--phrase-one {
       z-index: 1;
@@ -38,6 +49,12 @@
 
     &--phrase-two {
       text-align: right;
+
+      @media only screen and (max-width: 768px) {
+        text-align: left;
+        margin-left: 10rem;
+        z-index: 2;
+      }
     }
 
 
@@ -51,6 +68,15 @@
       margin-left: auto;
       width: 57rem;
       justify-content: space-between;
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 15rem;
+        width: 75rem;
+        left: -7rem;
+        font-size: 1.6rem;
+        position: relative;
+
+      }
     }
 
     &--line {
@@ -60,6 +86,13 @@
       position: relative;
       transform: rotate(-52deg) translateX(42%);
       left: 15%;
+
+      @media only screen and (max-width: 768px) {
+        left: -19%;
+        transform: rotate(-52deg) translateX(89%);
+
+
+      }
 
     }
   }
