@@ -9,6 +9,21 @@
       left: 6rem;
       z-index: 2;
       height: 110rem;
+
+      @media only screen and (max-width: 1568px) {
+        top: 8rem;
+        left: -27rem;
+      }
+
+
+      & img {
+      
+      @media only screen and (max-width: 768px) {
+        height: 90%;
+        
+      }
+
+    }
     }
 
 
@@ -26,23 +41,40 @@
     & .cross-1-1 {
       top: 15.8rem;
       left: 21rem;
+      @media only screen and (max-width: 768px) {
+        top: 11.8rem;
+        left: 3rem;
+      }
     }
 
     & .cross-1-2 {
       top: 15.8rem;
       left: 21rem;
       transform: rotate(90deg);
+      @media only screen and (max-width: 768px) {
+        top: 11.8rem;
+        left: 3rem;
+      }
     }
 
     & .cross-2-1 {
       left: 23rem;
       top: 16.9rem;
+
+      @media only screen and (max-width: 768px) {
+        left: 6rem;
+        top: 12.9rem;
+      }
     }
 
     & .cross-2-2 {
       left: 23rem;
       top: 17rem;
       transform: rotate(90deg);
+      @media only screen and (max-width: 768px) {
+        left: 6rem;
+        top: 12.9rem;
+      }
     }
 
     &--title {
@@ -55,6 +87,10 @@
       padding-top: 10.3rem;
       line-height: 1;
       height: 25.7rem;
+
+      @media only screen and (max-width: 768px) {
+        width: 60%;
+      }
     }
 
     &--line {
@@ -65,6 +101,12 @@
       transform: rotate(-54deg) translateX(40rem);
       left: -33rem;
       position: relative;
+
+      @media only screen and (max-width: 768px) {
+        transform: rotate(-54deg) translateX(26rem);
+        left: auto;
+        right: 67rem;
+      }
     }
 
 
@@ -87,6 +129,10 @@
     &--textbox {
       width: 45%;
       align-self: center;
+
+      @media only screen and (max-width: 768px) {
+        width: 60%;
+      }
 
       &--title {
         color: $color-grey-dark;

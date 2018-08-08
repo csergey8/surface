@@ -12,6 +12,17 @@
       height: 86rem;
       overflow: hidden;
       max-width: 100rem;
+      position: relative;
+
+      & img {
+        @media only screen and (max-width: 768px) {
+          height: 79rem;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        right: 8rem;
+      }
     }
 
 
@@ -92,6 +103,10 @@
       position: relative;
       overflow: hidden;
 
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+
       @media only screen and (max-width: 1568px) {
         width: 30rem;
       }
@@ -123,6 +138,10 @@
     &--textbox {
       width: 45%;
       align-self: center;
+
+      @media only screen and (max-width: 768px) {
+        width: 60%;
+      }
 
       &--title {
         color: $color-grey-dark;

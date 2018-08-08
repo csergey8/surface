@@ -1,11 +1,11 @@
 .header {
   height: 96rem;
-  background: url('../img/main.png') no-repeat center;
+  background: url('../img/main.png') no-repeat center fixed;
   color: #fff;
   position: relative;
 
   @media only screen and (max-width: 768px) {
-    background: url('../img/main.png') no-repeat center top;
+    background: url('../img/main.png') no-repeat center top fixed;
   }
 
   &__overlay {
