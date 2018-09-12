@@ -154,6 +154,10 @@ h1 {
       color: #fff;
       display: flex;
       outline: 0px; }
+      .header__buttons--item:hover {
+        transform: translateY(5px);
+        cursor: pointer;
+        box-shadow: 0px 16px 24px 10px #0a0d35; }
       .header__buttons--item i {
         font-size: 4rem;
         margin-left: 13%;
@@ -287,16 +291,21 @@ h1 {
 .section__players {
   margin-top: 6.8rem;
   max-height: 96rem;
-  display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  overflow: hidden; }
+  .section__players .container {
+    position: relative; }
+  .section__players img {
+    position: absolute; }
   .section__players--img {
     z-index: 2;
-    right: -12rem;
-    top: -3rem;
+    left: 66rem;
+    top: 2rem;
     height: 86rem;
-    overflow: hidden;
     max-width: 100rem;
-    position: relative; }
+    position: absolute; }
+    .section__players--img img {
+      overflow: hidden; }
     @media only screen and (max-width: 768px) {
       .section__players--img img {
         height: 79rem; } }
@@ -366,6 +375,8 @@ h1 {
         width: 30rem; } }
   .section__players--item {
     height: 25.7rem; }
+    .section__players--item:last-child {
+      color: red; }
     .section__players--item:nth-child(3) {
       background: #f6f4fb; }
     .section__players--item:nth-child(4) {
@@ -393,20 +404,23 @@ h1 {
       font-size: 2rem;
       font-weight: 300; }
 
+.section__players--item:nth-child(4) {
+  height: 19rem; }
+
 .section__grid {
-  margin-top: 6.8rem;
   display: flex;
   flex-wrap: wrap; }
   .section__grid--card {
     width: 50%; }
-    .section__grid--card:nth-child(3) {
-      order: 3; }
-    .section__grid--card:nth-child(4) {
-      order: 0; }
-    .section__grid--card:nth-child(5) {
-      order: 5; }
-    .section__grid--card:nth-child(6) {
-      order: 6; }
+    @media only screen and (max-width: 768px) {
+      .section__grid--card:nth-child(3) {
+        order: 3; }
+      .section__grid--card:nth-child(4) {
+        order: 0; }
+      .section__grid--card:nth-child(5) {
+        order: 5; }
+      .section__grid--card:nth-child(6) {
+        order: 6; } }
     @media only screen and (max-width: 768px) {
       .section__grid--card {
         width: 100%; } }

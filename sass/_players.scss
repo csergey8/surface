@@ -2,17 +2,31 @@
   &__players {
     margin-top: 6.8rem;
     max-height: 96rem;
-    display: flex;
+    //display: flex;
     flex-direction: column;
+    overflow: hidden;
+
+    
+
+    & .container {
+      position: relative;
+    }
+
+    & img {
+      position: absolute;
+    }
 
     &--img {
       z-index: 2;
-      right: -12rem;
-      top: -3rem;
+      left: 66rem;
+      top: 2rem;
       height: 86rem;
-      overflow: hidden;
       max-width: 100rem;
-      position: relative;
+      position: absolute;
+
+      & img {
+        overflow: hidden;
+      }
 
       & img {
         @media only screen and (max-width: 768px) {
@@ -117,6 +131,10 @@
 
     &--item {
       height: 25.7rem;
+
+      &:last-child {
+        color: red;
+      }
       
 
 
@@ -169,4 +187,8 @@
       }
     }
   }
+}
+
+.section__players--item:nth-child(4) {
+  height: 19rem;
 }
